@@ -33,6 +33,8 @@
         <option value="$MODULE_DIR$/veryfirst/dashboard/templates" />
         <option value="$MODULE_DIR$/veryfirst/item/templates" />
         <option value="$MODULE_DIR$/veryfirst/core/templates" />
+        <option value="$MODULE_DIR$/veryfirst/conversation/templates" />
+        <option value="$MODULE_DIR$/veryfirst/blog/templates" />
       </list>
     </option>
   </component>
