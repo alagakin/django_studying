@@ -1,0 +1,13 @@
+{% extends 'core/base.html' %}
+
+{% block title %} Delete post {% endblock %}
+
+{% block content %}
+       <h1>Delete </h1>
+    <form action="" method="post">
+        {% csrf_token %}
+        <p>Sure? It will delete permanently "{{ object.title }}"</p>
+        {{ form.as_p }}
+        <input type="submit" value="Delete" class="px-6 py-3 text-lg font-semibold bg-red-500 text-white rounded-lg hover:bg-teal-700">
+    </form>
+{% endblock %}

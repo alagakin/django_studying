@@ -8,5 +8,8 @@
     <div class="space-y-6">
         {{ object.body }}
     </div>
-    <a href="{% url 'blog:post_edit' post.pk %}">Edit Post</a>
+    <div class="mt-5">
+        <a href="{% url 'blog:post_edit' post.pk %}" class="px-6 py-3 text-lg font-semibold bg-teal-500 text-white rounded-lg hover:bg-teal-700">Edit Post</a>
+        <a href="{% url 'blog:post_delete' post.pk %}" class="px-6 py-3 text-lg font-semibold bg-red-500 text-white rounded-lg hover:bg-teal-700">Delete Post</a>
+    </div>
 {% endblock %}
