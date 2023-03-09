@@ -11,10 +11,10 @@
 
 <body>
     <nav class="px-6 py-6 flex justify-between items-center border-b border-gray-200">
-        <a href="/" class="text-xl font-semibold">My very first Django project</a>
+        <a href="/" class="text-xl font-semibold">Project</a>
         <div class="space-6-x">
-            <a href="{% url 'item:new' %}" class="text-lg font-semibold hover:text-gray-500">New Item</a>
-            <a href="{% url 'item:items' %}" class="text-lg font-semibold hover:text-gray-500">Browse</a>
+            <a href="{% url 'item:new' %}" class="text-lg font-semibold hover:text-gray-500">New Item</a> |
+            <a href="{% url 'item:items' %}" class="text-lg font-semibold hover:text-gray-500">Browse</a> |
             <a href="{% url 'blog:list' %}" class="text-lg font-semibold hover:text-gray-500">Blog</a>
 
             {% if request.user.is_authenticated %}
@@ -27,12 +27,13 @@
             {% endif %}
         </div>
     </nav>
-    <div class="px-6 py-6">
-        {% block content %}
-        {% endblock content %}
-    </div>
+        <div class="px-6 py-6" style="min-height: 80vh">
+            {% block content %}
+            {% endblock content %}
+        </div>
 
-    <footer class="py-6 px-6 flex justify-between bg-gray-800">
+
+    <footer class=" py-6 px-6 flex justify-between bg-gray-800">
         <div class="w-2/3 pr-10">
             <h3 class="mb-5 font-semibold text-gray-400">About</h3>
             <p class="text-lg text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam dignissimos ut ipsam voluptate doloribus. Consectetur corrupti est magni quidem aliquam eaque pariatur eius totam! Vel quidem ratione esse, architecto neque unde eos modi aperiam deleniti fuga laudantium iure impedit vero nisi commodi quaerat blanditiis doloribus excepturi perferendis accusamus dolores eaque!</p>

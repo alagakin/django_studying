@@ -8,7 +8,7 @@
     <div class="space-y-6">
         {% for post in object_list %}
             <div class="bg-gray-200 p-4 font-lg mb-2">
-                <h2 class=" text-semi-bold text-xl"><a href="">{{ post.title }}</a></h2>
+                <h2 class=" text-semi-bold text-xl"><a href="{% url 'blog:post_detail' post.pk %}">{{ post.title }}</a></h2>
                 <p>{{ post.body | truncatechars_html:10 }}</p>
             </div>
         {% endfor %}
