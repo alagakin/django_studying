@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     'item',
     'dashboard',
     'conversation',
-    'blog'
+    'blog',
+    'accounts'
 ]
 
 MIDDLEWARE = [
